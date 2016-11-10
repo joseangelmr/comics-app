@@ -27,7 +27,19 @@ angular.module('app.services', [])
             q.reject(err);
           });
         return q.promise;
+      },
+
+      getComic: function (id) {
+
+        var comic = lodash.find(comics, function(o) {
+          return o.id == id;
+        });
+
+
+        return comic
       }
+
+
 
     }
   })

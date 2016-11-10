@@ -15,11 +15,11 @@
 
       <a ng-repeat="comic in comics"
          class="item item-thumbnail-left"
-         href="#/tab/chats/{{comic.id}}">
+         href="#/app/comics/{{comic.id}}">
         <img image-lazy-src="{{comic.thumbnail.path}}{{'.'}}{{comic.thumbnail.extension}}" image-lazy-loader="ios">
         <h2 class="comic-title">{{comic.title}}</h2>
         <p class="comic-date">{{'Published: '}}{{comic.year}}</p>
-        <h2 class="comic-price">{{comic.prices[0].price}} {{'$'}}</h2>
+        <h2 class="comics-price">{{comic.prices[0].price}} {{'$'}}</h2>
       </a>
     </div>
   </ion-content>

@@ -48,7 +48,7 @@ a.item.item-thumbnail-left {
 }
 
 
-.comic-price {
+.comics-price {
   color: #c10000 !important;
   text-align: left;
   font-family: 'Oswald', sans-serif;
@@ -71,6 +71,62 @@ a.item.item-thumbnail-left {
 }
 
 
+.comic-description{
+  color: rgba(255, 255, 255, 0.79) !important;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight : normal;
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: -32px;
+}
+
+
+.comic-price {
+  color: #c10000 !important;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold !important;
+  padding-left: 150px;
+  margin-top: -7px;
+}
+
+.comic-price-label {
+  color:  rgba(255, 255, 255, 0.79) !important;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold !important;
+  padding-left: 150px;
+  margin-top: 30px
+}
+
+
+.comic-series{
+  color: rgba(255, 255, 255, 0.79) !important;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold !important;
+  padding-left: 150px;
+  margin-top: -7px;
+}
+
+
+.stories {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.stories > a.item {
+  background-color: transparent;
+}
+
+.label {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.79) !important;
+  padding-top: 15px;
+  padding-left: 150px;
+}
 
 /* override ionic styles */
 
@@ -99,3 +155,40 @@ a.item.item-thumbnail-left {
 
 
 
+/* media query*/
+
+@media(max-width:640px) and (max-height:960px){
+  /*.content{*/
+    /*background: red !important*/
+  /*}*/
+
+  .comic-description{
+    padding-left: 30px;
+    padding-right: 30px
+  }
+
+  .comic-price {
+    padding-left: 30px;
+  }
+
+
+  .comic-price-label {
+    padding-left: 30px;
+  }
+
+  .comic-series {
+    padding-left: 30px;
+  }
+
+
+  .stories {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  .label {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

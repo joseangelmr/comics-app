@@ -33,5 +33,15 @@ angular.module('app', ['ionic', 'app.controllers', 'app.services', 'ngLodash', '
         }
       })
 
+      .state('app.comic', {
+        url: '/comics/:comicId',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/comic.html',
+            controller: 'DetailsCtrl'
+          }
+        }
+      });
+
     $urlRouterProvider.otherwise('/app/comics');
   });
