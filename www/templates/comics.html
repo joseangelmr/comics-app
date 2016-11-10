@@ -1,0 +1,28 @@
+<ion-view view-title="Discover" class="title">
+
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-search-strong" ng-click="showFilterBar()">
+    </button>
+  </ion-nav-buttons>
+
+
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding content" lazy-scroll>
+    <div class="list">
+
+      <a ng-repeat="comic in comics"
+         class="item item-thumbnail-left"
+         href="#/tab/chats/{{comic.id}}">
+        <img image-lazy-src="{{comic.thumbnail.path}}{{'.'}}{{comic.thumbnail.extension}}" image-lazy-loader="ios">
+        <h2 class="comic-title">{{comic.title}}</h2>
+        <p class="comic-date">{{'Published: '}}{{comic.year}}</p>
+        <h2 class="comic-price">{{comic.prices[0].price}} {{'$'}}</h2>
+      </a>
+    </div>
+  </ion-content>
+
+
+</ion-view>
