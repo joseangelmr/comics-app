@@ -1,0 +1,59 @@
+<ion-view view-title="{{comic.title}}">
+  <ion-content class="content">
+
+
+    <div style="height: 50px; background: #111"></div>
+    <div style="max-height: 300px; background: #111;width: 100%;text-align: center;">
+      <img image-lazy-src="{{comic.thumbnail.path}}{{'.'}}{{comic.thumbnail.extension}}" image-lazy-loader="ios"
+           style="height: 300px;">
+    </div>
+
+    <div style="height: 50px; background: #111"></div>
+
+
+
+
+    <h4 class="label">{{'Price'}}</h4>
+
+    <h2 class="comic-price">{{comic.prices[0].price}} {{'$'}}</h2>
+
+
+
+    <h4 class="label">{{'Series'}}</h4>
+
+
+    <h3 class="comic-series">{{comic.series.name}}</h3>
+
+
+    <h4 class="label">{{'Description'}}</h4>
+
+
+    <h3 class="comic-description">{{comic.description}}</h3>
+
+
+
+    <h4 class="label">{{'Stories'}}</h4>
+
+
+    <div class="list stories">
+      <a ng-repeat="item in comic.stories.items" class="item">
+        <h2 class="comic-title">{{item.name}}</h2>
+      </a>
+    </div>
+
+
+    <h4 class="label">{{'Creators'}}</h4>
+
+    <div class="list stories">
+      <a ng-repeat="item in comic.creators.items" class="item">
+        <h2 class="comic-title">{{item.name}}</h2>
+      </a>
+    </div>
+
+
+    <div style="height: 50px;"></div>
+
+
+
+  </ion-content>
+</ion-view>
