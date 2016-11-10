@@ -31,8 +31,10 @@ angular.module('app.controllers', [])
         },
       });
     };
+  })
 
-
+  .controller('DetailsCtrl', function ($scope, $stateParams, API) {
+    $scope.comic = API.getComic($stateParams.comicId);
   })
 
 
