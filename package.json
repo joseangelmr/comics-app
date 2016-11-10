@@ -1,6 +1,6 @@
 {
   "name": "comics-app",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "comics-app: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
