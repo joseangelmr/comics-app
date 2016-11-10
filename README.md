@@ -18,3 +18,14 @@ heroku create
 git push heroku master
 heroku open
 ```
+
+
+## Screenshots
+
+
+
+
+![Screenshot](https://raw.githubusercontent.com/joseangelmr/comics-app/master/captures/comics.jpg)
+
+![Screenshot](https://raw.githubusercontent.com/joseangelmr/comics-app/master/captures/details.jpg)
+
