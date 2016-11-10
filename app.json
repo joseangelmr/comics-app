@@ -1,0 +1,7 @@
+{
+  "name": "demo",
+  "description": "A simple Ionic app for Heroku",
+  "repository": "https://github.com/joseangelmr/api-consume-demo",
+  "logo": "",
+  "keywords": ["ionic", "static"]
+}
