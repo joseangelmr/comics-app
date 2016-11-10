@@ -1,6 +1,6 @@
 {
   "name": "comics-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "comics-app: An Ionic project",
   "dependencies": {
     "express": "^4.14.0"
